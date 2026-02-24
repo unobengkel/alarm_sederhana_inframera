@@ -1,105 +1,67 @@
-Tentu, Fabian. Ini adalah rancangan file **README.md** yang disusun untuk mempermudah audiens di Instagram atau siapa pun yang mengakses folder tersebut dalam memahami proyek **Infrared Security Alert System (ISAS)** milikmu.
-
----
-
 # Infrared Security Alert System (ISAS) 🚨
 
 **Sistem Alarm Keamanan Mandiri Berbasis Sensor Inframerah (IR Barrier Alert)**
 
-Proyek ini adalah solusi keamanan praktis dan ekonomis untuk memproteksi area pribadi seperti pintu, jendela, atau lemari penyimpanan tanpa bergantung pada instalasi kabel listrik rumah. Menggunakan logika *Active LOW*, sistem ini memberikan respon instan berupa suara saat terjadi interupsi pada sensor.
+Proyek ini adalah solusi keamanan praktis, ekonomis, dan *standalone* yang dirancang untuk memproteksi area pribadi seperti pintu, jendela, atau lemari tanpa bergantung pada instalasi kabel listrik PLN. 
+
+Sistem ini memanfaatkan teknologi sensor inframerah dengan logika *Active LOW* untuk memberikan respon instan berupa suara (buzzer) saat terjadi interupsi atau perubahan posisi pada objek yang dipantau.
+
+---
 
 ## 🛠 Fitur Utama
 
-* Dual 18650 Power Cell**: Kapasitas daya besar untuk durasi operasional yang lama.
-
-
-* Precision IR Detection**: Sensitivitas deteksi yang dapat diatur untuk akurasi tinggi.
-
-
-* Active LOW Relay Trigger**: Respons cepat dalam memicu alarm melalui sistem relay yang stabil.
-
-
-* Voltage Stability**: Dilengkapi regulator Step Down 5V (Buck Converter) untuk melindungi komponen dari kelebihan tegangan.
-
-
-* Standalone & Portable**: Berkat tenaga baterai dan casing mandiri, alat ini mudah dipindahkan atau ditempel di mana saja.
-
-
+* **Dual 18650 Power Cell**: Menggunakan dua baterai 18650 untuk kapasitas daya besar dan durasi operasional yang lama.
+* **Precision IR Detection**: Sensitivitas sensor yang dapat diatur (kalibrasi) untuk akurasi deteksi jarak dekat.
+* **Active LOW Relay Trigger**: Respon sakelar mekanis yang cepat dan stabil dalam memicu alarm.
+* **Voltage Stability**: Dilengkapi modul *Step Down 5V* (Buck Converter) untuk memastikan arus tetap stabil dan aman bagi komponen.
+* **Portable Design**: Tanpa kabel eksternal, memudahkan pemasangan di berbagai sudut ruangan.
 
 ---
 
 ## 📂 Panduan Navigasi File
 
-Gunakan file-file di bawah ini untuk memahami proyek secara mendalam:
+Untuk memahami proyek ini lebih dalam, silakan merujuk pada file-file berikut:
 
-1. `1_perangkat_alarm.pdf` (Dasar Teori & Konsep)** 
+1.  **`1_perangkat_alarm.pdf` (Dasar Teori)**
+    * Berisi latar belakang proyek, fitur utama, serta tujuan dan manfaat teknis dari sistem ISAS.
+2.  **`2_skema_n_komponen.pdf` (Detail Teknis)**
+    * Daftar lengkap komponen beserta spesifikasi dan fungsinya dalam rangkaian.
+3.  **`3_cara_menyalakan_alat.pdf` (Panduan Operasional)**
+    * Instruksi cara menyalakan, melakukan kalibrasi sensor, hingga prosedur pengujian pada pintu.
+4.  **Folder `/gambar_alat`**
+    * Dokumentasi visual unit yang sudah selesai dirakit.
+5.  **Folder `/skema_n_komponen`**
+    * Diagram pengabelan (wiring diagram) untuk membantu perakitan ulang.
 
+---
 
-* Berisi latar belakang proyek, fitur utama, serta tujuan dan manfaat pembuatan alat ini.
+## ⚙️ Spesifikasi Komponen
 
-
-
-
-2. `2_skema_n_komponen.pdf` (Detail Teknis)** 
-
-
-* Daftar lengkap komponen yang digunakan (Sensor IR, Relay, Buzzer, Step Down, dll.) beserta penjelasan fungsinya masing-masing.
-
-
-
-
-3. `3_cara_menyalakan_alat.pdf` (Tutorial & Pengujian)
-
-
-* Panduan operasional cara menyalakan alat, melakukan kalibrasi jarak sensor, hingga prosedur instalasi pada pintu untuk pengujian lapangan.
-
-
-
-
-4. Folder `/gambar_alat**`
-* Dokumentasi visual unit ISAS yang sudah jadi.
-
-
-5. Folder `/skema_n_komponen**`
-* Diagram sirkuit dan detail perkabelan antar modul.
-
-
+| Komponen | Fungsi |
+| :--- | :--- |
+| **Sensor IR** | Mendeteksi rintangan/objek melalui pantulan cahaya inframerah. |
+| **Relay 1 Ch (Active LOW)** | Bertindak sebagai sakelar elektronik untuk memutus/menyambung arus alarm. |
+| **Buzzer** | Output suara peringatan (alarm). |
+| **Baterai 18650** | Sumber daya utama (High Capacity). |
+| **Step Down LM2596/Mini** | Menurunkan tegangan baterai ke 5V DC yang stabil. |
 
 ---
 
 ## 💡 Cara Kerja Singkat
 
-Sistem ditenagai oleh dua baterai 18650 yang tegangannya diturunkan menjadi 5V melalui modul Step Down. Arus ini menghidupkan Sensor IR yang terus memancarkan sinar inframerah.
-
-* Kondisi Aman (Pintu Tertutup)**: Sensor mendeteksi pantulan cahaya dari pintu/kusen; alarm tetap diam.
-
-
-* Kondisi Pelanggaran (Pintu Terbuka)**: Sensor kehilangan pantulan cahaya, mengirim sinyal *LOW* ke Relay, dan seketika membunyikan Buzzer.
-
-
+Sistem bekerja dengan prinsip interupsi cahaya:
+1.  **Kondisi Tertutup**: Sensor IR mendeteksi pantulan cahaya dari kusen pintu. Output sensor berada pada kondisi *HIGH*, sehingga Relay tidak terpicu.
+2.  **Kondisi Terbuka**: Saat pintu dibuka, sensor kehilangan pantulan cahaya. Sinyal berubah menjadi *LOW*, memicu Relay untuk menutup sirkuit Buzzer.
+3.  **Alarm Aktif**: Buzzer akan terus berbunyi selama sensor tidak mendeteksi adanya rintangan di depannya.
 
 ---
 
-## ⚙️ Komponen Utama
+## 🚀 Instalasi Cepat
 
-| Komponen | Fungsi Utama |
-| --- | --- |
-| Sensor IR | Mendeteksi rintangan/objek di depan pintu.
-
- |
-| Relay 1 Ch (Active LOW) | Sakelar elektronik untuk memicu alarm.
-
- |
-| Buzzer | Indikator audio atau sirine peringatan.
-
- |
-| Baterai 18650 (2 Sel) | Sumber daya mandiri (7.4V - 8.4V).
-
- |
-| Regulator Step Down | Penurun tegangan ke 5V yang stabil untuk sirkuit.
-
- |
+1.  Tempelkan unit pada daun pintu menggunakan *glue tack* atau baut kecil.
+2.  Pastikan moncong sensor menghadap tepat ke arah kusen pintu (jarak ideal 2-10 cm).
+3.  Nyalakan sakelar *ON*.
+4.  Uji dengan membuka pintu; pastikan buzzer merespons secara *real-time*.
 
 ---
-
-Apakah kamu ingin saya membuatkan draf *caption* Instagram yang menarik untuk mempromosikan file README dan proyek ini?
+*Dibuat untuk keperluan dokumentasi proyek teknis - 2026*
