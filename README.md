@@ -32,8 +32,7 @@ Proyek ini adalah solusi keamanan praktis dan ekonomis untuk memproteksi area pr
 
 Gunakan file-file di bawah ini untuk memahami proyek secara mendalam:
 
-1. 
-**`1_perangkat_alarm.pdf` (Dasar Teori & Konsep)** 
+1. `1_perangkat_alarm.pdf` (Dasar Teori & Konsep)** 
 
 
 * Berisi latar belakang proyek, fitur utama, serta tujuan dan manfaat pembuatan alat ini.
@@ -41,8 +40,7 @@ Gunakan file-file di bawah ini untuk memahami proyek secara mendalam:
 
 
 
-2. 
-**`2_skema_n_komponen.pdf` (Detail Teknis)** 
+2. `2_skema_n_komponen.pdf` (Detail Teknis)** 
 
 
 * Daftar lengkap komponen yang digunakan (Sensor IR, Relay, Buzzer, Step Down, dll.) beserta penjelasan fungsinya masing-masing.
@@ -50,8 +48,7 @@ Gunakan file-file di bawah ini untuk memahami proyek secara mendalam:
 
 
 
-3. 
-**`3_cara_menyalakan_alat.pdf` (Tutorial & Pengujian)** 
+3. `3_cara_menyalakan_alat.pdf` (Tutorial & Pengujian)** 
 
 
 * Panduan operasional cara menyalakan alat, melakukan kalibrasi jarak sensor, hingga prosedur instalasi pada pintu untuk pengujian lapangan.
@@ -74,12 +71,10 @@ Gunakan file-file di bawah ini untuk memahami proyek secara mendalam:
 
 Sistem ditenagai oleh dua baterai 18650 yang tegangannya diturunkan menjadi 5V melalui modul Step Down. Arus ini menghidupkan Sensor IR yang terus memancarkan sinar inframerah.
 
-* 
-**Kondisi Aman (Pintu Tertutup)**: Sensor mendeteksi pantulan cahaya dari pintu/kusen; alarm tetap diam.
+* Kondisi Aman (Pintu Tertutup)**: Sensor mendeteksi pantulan cahaya dari pintu/kusen; alarm tetap diam.
 
 
-* 
-**Kondisi Pelanggaran (Pintu Terbuka)**: Sensor kehilangan pantulan cahaya, mengirim sinyal *LOW* ke Relay, dan seketika membunyikan Buzzer.
+* Kondisi Pelanggaran (Pintu Terbuka)**: Sensor kehilangan pantulan cahaya, mengirim sinyal *LOW* ke Relay, dan seketika membunyikan Buzzer.
 
 
 
