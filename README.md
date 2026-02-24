@@ -48,7 +48,7 @@ Gunakan file-file di bawah ini untuk memahami proyek secara mendalam:
 
 
 
-3. `3_cara_menyalakan_alat.pdf` (Tutorial & Pengujian)** 
+3. `3_cara_menyalakan_alat.pdf` (Tutorial & Pengujian)
 
 
 * Panduan operasional cara menyalakan alat, melakukan kalibrasi jarak sensor, hingga prosedur instalasi pada pintu untuk pengujian lapangan.
@@ -56,11 +56,11 @@ Gunakan file-file di bawah ini untuk memahami proyek secara mendalam:
 
 
 
-4. **Folder `/gambar_alat**`
+4. Folder `/gambar_alat**`
 * Dokumentasi visual unit ISAS yang sudah jadi.
 
 
-5. **Folder `/skema_n_komponen**`
+5. Folder `/skema_n_komponen**`
 * Diagram sirkuit dan detail perkabelan antar modul.
 
 
@@ -84,19 +84,19 @@ Sistem ditenagai oleh dua baterai 18650 yang tegangannya diturunkan menjadi 5V m
 
 | Komponen | Fungsi Utama |
 | --- | --- |
-| **Sensor IR** | Mendeteksi rintangan/objek di depan pintu.
+| Sensor IR | Mendeteksi rintangan/objek di depan pintu.
 
  |
-| **Relay 1 Ch (Active LOW)** | Sakelar elektronik untuk memicu alarm.
+| Relay 1 Ch (Active LOW) | Sakelar elektronik untuk memicu alarm.
 
  |
-| **Buzzer** | Indikator audio atau sirine peringatan.
+| Buzzer | Indikator audio atau sirine peringatan.
 
  |
-| **Baterai 18650 (2 Sel)** | Sumber daya mandiri (7.4V - 8.4V).
+| Baterai 18650 (2 Sel) | Sumber daya mandiri (7.4V - 8.4V).
 
  |
-| **Regulator Step Down** | Penurun tegangan ke 5V yang stabil untuk sirkuit.
+| Regulator Step Down | Penurun tegangan ke 5V yang stabil untuk sirkuit.
 
  |
 
