@@ -10,24 +10,19 @@ Proyek ini adalah solusi keamanan praktis dan ekonomis untuk memproteksi area pr
 
 ## 🛠 Fitur Utama
 
-* 
-**Dual 18650 Power Cell**: Kapasitas daya besar untuk durasi operasional yang lama.
+* Dual 18650 Power Cell**: Kapasitas daya besar untuk durasi operasional yang lama.
 
 
-* 
-**Precision IR Detection**: Sensitivitas deteksi yang dapat diatur untuk akurasi tinggi.
+* Precision IR Detection**: Sensitivitas deteksi yang dapat diatur untuk akurasi tinggi.
 
 
-* 
-**Active LOW Relay Trigger**: Respons cepat dalam memicu alarm melalui sistem relay yang stabil.
+* Active LOW Relay Trigger**: Respons cepat dalam memicu alarm melalui sistem relay yang stabil.
 
 
-* 
-**Voltage Stability**: Dilengkapi regulator Step Down 5V (Buck Converter) untuk melindungi komponen dari kelebihan tegangan.
+* Voltage Stability**: Dilengkapi regulator Step Down 5V (Buck Converter) untuk melindungi komponen dari kelebihan tegangan.
 
 
-* 
-**Standalone & Portable**: Berkat tenaga baterai dan casing mandiri, alat ini mudah dipindahkan atau ditempel di mana saja.
+* Standalone & Portable**: Berkat tenaga baterai dan casing mandiri, alat ini mudah dipindahkan atau ditempel di mana saja.
 
 
 
